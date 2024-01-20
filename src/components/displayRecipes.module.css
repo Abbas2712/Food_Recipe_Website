@@ -1,0 +1,13 @@
+.categoryTitle{
+   display:flex;
+   margin: 10dvh 0dvh 10dvh 0px;
+   justify-content: center;
+}
+
+.recipeContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1dvh 8dvw 1dvh 8dvw;
+    justify-items: center;
+    overflow: hidden;
+}
