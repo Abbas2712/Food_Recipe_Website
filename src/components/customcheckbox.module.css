@@ -1,0 +1,53 @@
+@import url(../global.module.css);
+
+.customCheckbox {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.customCheckbox input {
+  opacity: 0;
+  position: relative;
+  margin-left: 10px;
+}
+
+.checkMark {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--primary2-color);
+  border-radius: 2px;
+}
+
+.customCheckbox:hover input ~ .checkMark {
+  background-color: var(--primary-color);
+}
+
+.customCheckbox input:checked ~ .checkMark {
+  background-color: var(--primary2-color);
+  border: 1px solid var(--primary2-color);
+}
+
+.checkMark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customCheckbox input:checked ~ .checkMark:after {
+  display: block;
+}
+
+.customCheckbox .checkMark:after {
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  content: "";
+}

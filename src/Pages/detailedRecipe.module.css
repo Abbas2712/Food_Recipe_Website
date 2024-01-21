@@ -1,0 +1,166 @@
+@import url(../global.module.css);
+
+.detailedRecipeContainer {
+  margin: 8svh 23svh 8svh 23svh;
+}
+
+.detailedRecipeContainer > *{
+    color: var(--primary2-color);
+}
+.recipeContainer {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.nutriTitle {
+  font-weight: var(--font-weight-bold-700);
+}
+
+.imageHolder {
+  width: 550px;
+  height: 550px;
+  border-radius: 3px;
+}
+
+.breadCrumbs {
+  font-weight: var(--font-weight-light-300);
+  font-size: 1rem;
+  color: var(--primary2-color);
+}
+
+/* Ingredients */
+
+.ingredientListContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.ingedientList {
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+
+
+
+.recipeTitle {
+  font-size: 2.5rem;
+  color: var(--primary2-color);
+}
+ul {
+  padding: 0;
+}
+
+/* Recipe Meta */
+
+.recipeMeta {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.recipeMeta > * {
+  font-weight: var(--font-weight-semi-bold-600);
+  border-radius: 2px;
+  padding: 5px;
+  background: var(--secondary-color);
+  color: var(--primary2-color);
+}
+.nutritionContainer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.nutrition {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  gap: 0.25rem;
+  background-color: var(--primary2-color);
+  color: var(--ternary2-color);
+  /* justify-content: center; */
+  border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+}
+
+.nutriMerge{
+  display: flex;
+  gap: 0.5rem;
+}
+.nutriCount {
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-semi-bold-600);
+}
+
+.nutriType {
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-regular-400);
+  opacity: 0.8;
+}
+.nutritionalInformation {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.ingredientTitle {
+  font-weight: var(--font-weight-bold-700);
+}
+
+.singleIngedientContainer {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+}
+
+.ingredientImage {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
+
+.ingredentContent {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.ingredentContent > * {
+  padding: 0.5rem;
+}
+
+/* Tags */
+.tagsContainer{
+  margin-top: 2rem;
+}
+
+.tagsList{
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+
+.tagName{
+background-color: var(--primary2-color);
+padding: 10px;
+color: var(--ternary2-color);
+border-radius: 2px;
+}
+
+/* Caution */
+.caution{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+.caution label{
+  text-align: start;
+}

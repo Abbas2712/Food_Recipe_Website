@@ -1,8 +1,9 @@
 import data from "../../single_recipe_api_data .json";
-import styles from '../DisplaySingleRecipe.module.css'
+import styles from './DisplaySingleRecipe.module.css'
 import { useNavigate} from 'react-router-dom';
 export default function DisplaySingleRecipe ({label, image, source,detailedRecipeURL}){
     const navigate = useNavigate()
+    // recipe/${label}/detailedRecipe
     return (
         <div className={styles.recipeCard} onClick={()=>{navigate(`recipe/${label}/detailedRecipe`,{state:{'url':detailedRecipeURL }})}} >
             <img src={image} alt="" className={styles.recipeImage} />

@@ -1,14 +1,14 @@
-@import url(../components/global.module.css);
+@import url(../global.module.css);
 
 .header{
     display: flex ;
     justify-content: space-between;
-    background: var(--ternary-color);
-    padding: 30px;
+    background: var(--primary2-color);
+    padding: 25px 30px 25px 30px;
     margin-bottom: 10px;
 }
 .logo{
-    color: var(--primary2-color)
+    color: var(--ternary2-color)
 }
 .navigation{
     display: flex;
@@ -21,6 +21,6 @@ ul li {
 }
 ul li a{
     text-decoration: none;
-    color: var(--primary2-color)
+    color: var(--ternary2-color)
 
 }

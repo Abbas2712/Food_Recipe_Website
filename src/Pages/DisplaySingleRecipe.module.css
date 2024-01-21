@@ -1,4 +1,4 @@
-@import url(./components/global.module.css);
+@import url(../global.module.css);
 
 .recipeCard{
     width: 80%;

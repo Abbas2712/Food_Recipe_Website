@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import styles from './search.module.css'
 
 const URL = 'https://api.edamam.com/api/recipes/v2'
 const API_ID = '04bc8fd4'
@@ -23,6 +24,6 @@ export default function Search ({setFoodRecipes, query, setQuery}){
     }
 
     return(
-        <input value={query} onChange={handleChange} type="text" name="search_recipe" id="" placeholder="try salad!" />
+        <input className={styles.searchBar} value={query} onChange={handleChange} type="text" name="search_recipe" id="" placeholder="What are you cooking today?" />
     )
 }

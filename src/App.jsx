@@ -1,9 +1,9 @@
 import { useState } from "react"
-import DisplayRecipes from "./components/DisplayRecipes"
-import Header from "./Header"
-import './components/global.module.css'
+import DisplayRecipes from "./Pages/DisplayRecipes"
+import Header from "./components/Header"
+import './global.module.css'
 import {Routes, Route} from 'react-router-dom'
-import DetailedRecipe from "./components/DetailedRecipe"
+import DetailedRecipe from "./Pages/DetailedRecipe"
 
 function App() {
   const [foodRecipes, setFoodRecipes] = useState([])
@@ -14,7 +14,8 @@ function App() {
       <Header query={query} setQuery={setQuery} setFoodRecipes={setFoodRecipes}/>
       <Routes>
         <Route path="/" element={<DisplayRecipes query={query} foodRecipes={foodRecipes}/>}/>
-        <Route path="/recipe/:recipeName/detailedRecipe" element={<DetailedRecipe/>}></Route>
+        {/*  /recipe/:recipeName/detailedRecipe*/}
+        <Route path="recipe/:label/detailedRecipe" element={<DetailedRecipe/>}></Route>
       </Routes>
       
 
